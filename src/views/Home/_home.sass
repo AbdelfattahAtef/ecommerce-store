@@ -1,0 +1,32 @@
+@import "../../styles/_variables.sass"
+@import "../../styles/_breakpoints.sass"
+.home-wrapper-container
+  display: flex
+  padding: 0 100px
+  justify-content: space-between
+  +breakpoint(xsmax)
+    padding: 0 20px
+.home-wrapper
+  &__filters
+    width: 20%
+    height: 88vh
+    border: 2px solid $color--light-gray
+    border-radius: 10px
+    padding: 20px
+    position: sticky
+    top: 20px
+    overflow: auto
+    transition: 1s ease-in-out
+    +breakpoint(xsmax)
+      width: 40%
+      position: fixed
+      left: 0
+      top: 40px
+      background: $color--white
+      border: 0
+      border-right: 3px solid $color--light-blue
+      border-radius: 0
+  &__cards
+    width: 70%
+    +breakpoint(xsmax)
+      width: 100%
