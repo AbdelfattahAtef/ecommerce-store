@@ -2,8 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Below you will find some information on how to perform common tasks.
 
-1- run `npm install` to install the dependencies
-2- run `npm start` to start the app
+- run `npm install` to install the dependencies
+- run `npm start` to start the app
 
 ******************************************************************************************************
 
