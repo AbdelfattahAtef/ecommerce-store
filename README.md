@@ -2,8 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Below you will find some information on how to perform common tasks.
 
-- git clone git@github.com:AbdelfattahAtef/ecommerce-store.git
-- cd ecommerce-store
+- `git clone git@github.com:AbdelfattahAtef/ecommerce-store.git`
+- `cd ecommerce-store`
 - run `npm install` to install the dependencies
 - run `npm start` to start the app
 
