@@ -1,0 +1,38 @@
+@import "../../styles/_variables.sass"
+@import "../../styles/_breakpoints.sass"
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou')
+
+.header-wrapper
+  text-align: center
+  height: 100vh
+  background: url('https://tjwlcdn.com/cms/templates/flights-home/header-image.jpg') center center fixed
+  background-size: cover
+  position: relative
+  margin-bottom: 50px
+  +breakpoint(xsmax)
+    height: 30vh
+    background-position: center bottom
+  &__overlay
+    background: rgba(0,0,0,0.5)
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__title
+    color: $color--light-blue
+    font-size: 60px
+    font-weight: $text--weight-bold
+    margin-bottom: 10px
+    font-family: 'ZCOOL QingKe HuangYou', cursive
+    +breakpoint(xsmax)
+      font-size: 30px
+  &__sub-title
+    color: $color--yellow
+    font-size: 30px
+    margin-bottom: 40px
+    font-family: 'ZCOOL QingKe HuangYou', cursive
+    +breakpoint(xsmax)
+      font-size: 15px
