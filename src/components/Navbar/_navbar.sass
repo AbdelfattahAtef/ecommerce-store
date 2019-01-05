@@ -1,0 +1,16 @@
+@import "../../styles/_variables.sass"
+@import "../../styles/_breakpoints.sass"
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou')
+
+.navbar
+  padding: 10px
+  position: fixed
+  width: calc(100% - 20px)
+  top: 0
+  background: $color--white
+  border-bottom: 3px solid $color--light-blue
+  color: $color--light-blue
+  display: none
+  z-index: 99
+  +breakpoint(xsmax)
+    display: block
