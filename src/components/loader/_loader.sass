@@ -1,0 +1,52 @@
+@import "../../styles/_variables.sass"
+@import "../../styles/_breakpoints.sass"
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou')
+
+.loader
+  width: 100%
+  height: 100vh
+  position: fixed
+  background-color: rgba(255,255,255, 0.9)
+  top: 0
+  left: 0
+  z-index: 999999
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &__message
+    font-size: $text--large-size
+    font-weight: $text--weight-bold
+    color: $color--light-blue
+    font-family: 'ZCOOL QingKe HuangYou', cursive
+  .spinner
+    -webkit-animation: spin 1s linear infinite
+      animation: spin 1s linear infinite
+    border: 3px solid $color--light-blue
+    border-top: 3px solid $color--yellow
+    border-radius: 50%
+    height: 75px
+    width: 75px
+    margin-bottom: 20px
+  span
+    font-size: 25px
+    display: block
+    margin-top: 20px
+
+
+@-webkit-keyframes spin
+  to
+    border-top-color: $color--yellow
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+
+@keyframes spin
+  to
+    border-top-color: $color--yellow
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+
