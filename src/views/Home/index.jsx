@@ -88,6 +88,12 @@ class Home extends Component {
         });
         this.filterBy(this.state.categoryId, rating);
     }
+
+    /**
+     * Filter By
+     * @param categoryId
+     * @param rating
+     */
     filterBy(categoryId, rating){
         let data = {};
         if(rating){
@@ -100,6 +106,7 @@ class Home extends Component {
             filteredProducts: _.filter(this.state.products, data)
         });
     }
+
     /**
      * Toggle display of sidebar
      * @param displaySidebar

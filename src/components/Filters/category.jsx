@@ -29,7 +29,6 @@ function Category({categories, filterByCategory}) {
                 }
             </ul>
         </React.Fragment>
-
     )
 }
 
