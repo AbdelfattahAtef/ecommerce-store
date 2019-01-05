@@ -170,7 +170,12 @@ class Cards extends React.Component {
                         }
 
                         {/*Toggle Display of Loader*/}
-                        {this.state.showLoader && <Loader />}
+                        {
+                            this.state.showLoader &&
+                            this.state.products &&
+                            this.state.products.length >= this.state.numOfProducts &&
+                            <Loader />
+                        }
                     </React.Fragment>
                 </div>
             </React.Fragment>
